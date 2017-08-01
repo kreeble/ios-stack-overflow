@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D5054D21F313D85006F63B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054D11F313D85006F63B1 /* main.m */; };
+		3D5054D51F313D85006F63B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054D41F313D85006F63B1 /* AppDelegate.m */; };
+		3D5054D81F313D85006F63B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054D71F313D85006F63B1 /* ViewController.m */; };
+		3D5054DB1F313D85006F63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5054D91F313D85006F63B1 /* Main.storyboard */; };
+		3D5054DD1F313D85006F63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5054DC1F313D85006F63B1 /* Assets.xcassets */; };
+		3D5054E01F313D85006F63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5054DE1F313D85006F63B1 /* LaunchScreen.storyboard */; };
+		3D5054EB1F313D85006F63B1 /* wag_ios_challengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054EA1F313D85006F63B1 /* wag_ios_challengeTests.m */; };
+		3D5054F61F313D85006F63B1 /* wag_ios_challengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054F51F313D85006F63B1 /* wag_ios_challengeUITests.m */; };
+		6D93605FD8BED9BD6FAAF1F7 /* libPods-wag-ios-challenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */; };
+		76CEDA8023328F74912C4B66 /* libPods-wag-ios-challengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72318B612F32921D9A70DBC /* libPods-wag-ios-challengeTests.a */; };
+		C9EC2744B8CC5791953A7ECA /* libPods-wag-ios-challengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7032399174EE82447BD572 /* libPods-wag-ios-challengeUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D5054E71F313D85006F63B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D5054C51F313D85006F63B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D5054CC1F313D85006F63B1;
+			remoteInfo = "wag-ios-challenge";
+		};
+		3D5054F21F313D85006F63B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D5054C51F313D85006F63B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D5054CC1F313D85006F63B1;
+			remoteInfo = "wag-ios-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10DD22C1A07263199253280A /* Pods-wag-ios-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeUITests/Pods-wag-ios-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E700811FCC61A4C67454DD2 /* Pods-wag-ios-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challenge/Pods-wag-ios-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		3A7032399174EE82447BD572 /* libPods-wag-ios-challengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wag-ios-challengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5054CD1F313D85006F63B1 /* wag-ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wag-ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5054D11F313D85006F63B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D5054D31F313D85006F63B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D5054D41F313D85006F63B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D5054D61F313D85006F63B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D5054D71F313D85006F63B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D5054DA1F313D85006F63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D5054DC1F313D85006F63B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D5054DF1F313D85006F63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D5054E11F313D85006F63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5054E61F313D85006F63B1 /* wag-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wag-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5054EA1F313D85006F63B1 /* wag_ios_challengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wag_ios_challengeTests.m; sourceTree = "<group>"; };
+		3D5054EC1F313D85006F63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5054F11F313D85006F63B1 /* wag-ios-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wag-ios-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5054F51F313D85006F63B1 /* wag_ios_challengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wag_ios_challengeUITests.m; sourceTree = "<group>"; };
+		3D5054F71F313D85006F63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465A29ED0826C1D1BAFF56A8 /* Pods-wag-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wag-ios-challenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C805A7E430C057360265AA /* Pods-wag-ios-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challenge/Pods-wag-ios-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		BC700BB4932DBE0AEB9303E1 /* Pods-wag-ios-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeUITests/Pods-wag-ios-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D165C6133F4DA629175EFA27 /* Pods-wag-ios-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D72318B612F32921D9A70DBC /* libPods-wag-ios-challengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wag-ios-challengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D5054CA1F313D85006F63B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D93605FD8BED9BD6FAAF1F7 /* libPods-wag-ios-challenge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5054E31F313D85006F63B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CEDA8023328F74912C4B66 /* libPods-wag-ios-challengeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5054EE1F313D85006F63B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9EC2744B8CC5791953A7ECA /* libPods-wag-ios-challengeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D5054C41F313D85006F63B1 = {
+			isa = PBXGroup;
+			children = (
+				3D5054CF1F313D85006F63B1 /* wag-ios-challenge */,
+				3D5054E91F313D85006F63B1 /* wag-ios-challengeTests */,
+				3D5054F41F313D85006F63B1 /* wag-ios-challengeUITests */,
+				3D5054CE1F313D85006F63B1 /* Products */,
+				8745C912B044243F5FB0A0F1 /* Pods */,
+				991F433C17789674BABC18A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D5054CE1F313D85006F63B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054CD1F313D85006F63B1 /* wag-ios-challenge.app */,
+				3D5054E61F313D85006F63B1 /* wag-ios-challengeTests.xctest */,
+				3D5054F11F313D85006F63B1 /* wag-ios-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D5054CF1F313D85006F63B1 /* wag-ios-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055031F313E73006F63B1 /* Classes */,
+				3D5055051F313E88006F63B1 /* App Resources */,
+				3D5054D01F313D85006F63B1 /* Supporting Files */,
+			);
+			path = "wag-ios-challenge";
+			sourceTree = "<group>";
+		};
+		3D5054D01F313D85006F63B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054E11F313D85006F63B1 /* Info.plist */,
+				3D5054D11F313D85006F63B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D5054E91F313D85006F63B1 /* wag-ios-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054EA1F313D85006F63B1 /* wag_ios_challengeTests.m */,
+				3D5055071F313EC8006F63B1 /* Supporting Files */,
+			);
+			path = "wag-ios-challengeTests";
+			sourceTree = "<group>";
+		};
+		3D5054F41F313D85006F63B1 /* wag-ios-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054F51F313D85006F63B1 /* wag_ios_challengeUITests.m */,
+				3D5055081F313ED1006F63B1 /* Supporting Files */,
+			);
+			path = "wag-ios-challengeUITests";
+			sourceTree = "<group>";
+		};
+		3D5055031F313E73006F63B1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055041F313E7B006F63B1 /* App Delegate */,
+				3D5054D61F313D85006F63B1 /* ViewController.h */,
+				3D5054D71F313D85006F63B1 /* ViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3D5055041F313E7B006F63B1 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054D31F313D85006F63B1 /* AppDelegate.h */,
+				3D5054D41F313D85006F63B1 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		3D5055051F313E88006F63B1 /* App Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054D91F313D85006F63B1 /* Main.storyboard */,
+				3D5054DC1F313D85006F63B1 /* Assets.xcassets */,
+				3D5054DE1F313D85006F63B1 /* LaunchScreen.storyboard */,
+			);
+			name = "App Resources";
+			sourceTree = "<group>";
+		};
+		3D5055071F313EC8006F63B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054EC1F313D85006F63B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D5055081F313ED1006F63B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5054F71F313D85006F63B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8745C912B044243F5FB0A0F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3C805A7E430C057360265AA /* Pods-wag-ios-challenge.debug.xcconfig */,
+				1E700811FCC61A4C67454DD2 /* Pods-wag-ios-challenge.release.xcconfig */,
+				465A29ED0826C1D1BAFF56A8 /* Pods-wag-ios-challengeTests.debug.xcconfig */,
+				D165C6133F4DA629175EFA27 /* Pods-wag-ios-challengeTests.release.xcconfig */,
+				BC700BB4932DBE0AEB9303E1 /* Pods-wag-ios-challengeUITests.debug.xcconfig */,
+				10DD22C1A07263199253280A /* Pods-wag-ios-challengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		991F433C17789674BABC18A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */,
+				D72318B612F32921D9A70DBC /* libPods-wag-ios-challengeTests.a */,
+				3A7032399174EE82447BD572 /* libPods-wag-ios-challengeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D5054CC1F313D85006F63B1 /* wag-ios-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5054FA1F313D85006F63B1 /* Build configuration list for PBXNativeTarget "wag-ios-challenge" */;
+			buildPhases = (
+				CE4202386884C5AFF225147D /* [CP] Check Pods Manifest.lock */,
+				3D5054C91F313D85006F63B1 /* Sources */,
+				3D5054CA1F313D85006F63B1 /* Frameworks */,
+				3D5054CB1F313D85006F63B1 /* Resources */,
+				6E83B9E596489CDD80F4EBC9 /* [CP] Embed Pods Frameworks */,
+				46256453724DB3F969349F72 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wag-ios-challenge";
+			productName = "wag-ios-challenge";
+			productReference = 3D5054CD1F313D85006F63B1 /* wag-ios-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D5054E51F313D85006F63B1 /* wag-ios-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5054FD1F313D85006F63B1 /* Build configuration list for PBXNativeTarget "wag-ios-challengeTests" */;
+			buildPhases = (
+				085F67E375578930E2AA6A52 /* [CP] Check Pods Manifest.lock */,
+				3D5054E21F313D85006F63B1 /* Sources */,
+				3D5054E31F313D85006F63B1 /* Frameworks */,
+				3D5054E41F313D85006F63B1 /* Resources */,
+				84EF9A738289D65EAEB5ACF7 /* [CP] Embed Pods Frameworks */,
+				A153C67182705E59AFC8C713 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D5054E81F313D85006F63B1 /* PBXTargetDependency */,
+			);
+			name = "wag-ios-challengeTests";
+			productName = "wag-ios-challengeTests";
+			productReference = 3D5054E61F313D85006F63B1 /* wag-ios-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D5054F01F313D85006F63B1 /* wag-ios-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5055001F313D85006F63B1 /* Build configuration list for PBXNativeTarget "wag-ios-challengeUITests" */;
+			buildPhases = (
+				99ABE248C95F7BB739201AC1 /* [CP] Check Pods Manifest.lock */,
+				3D5054ED1F313D85006F63B1 /* Sources */,
+				3D5054EE1F313D85006F63B1 /* Frameworks */,
+				3D5054EF1F313D85006F63B1 /* Resources */,
+				8F5DA7DC6F204E88B976AC25 /* [CP] Embed Pods Frameworks */,
+				D3BC5228C22B3EEFF80A37AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D5054F31F313D85006F63B1 /* PBXTargetDependency */,
+			);
+			name = "wag-ios-challengeUITests";
+			productName = "wag-ios-challengeUITests";
+			productReference = 3D5054F11F313D85006F63B1 /* wag-ios-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D5054C51F313D85006F63B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kreeble;
+				TargetAttributes = {
+					3D5054CC1F313D85006F63B1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 49CYGH8GLU;
+						ProvisioningStyle = Automatic;
+					};
+					3D5054E51F313D85006F63B1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 49CYGH8GLU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D5054CC1F313D85006F63B1;
+					};
+					3D5054F01F313D85006F63B1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 49CYGH8GLU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D5054CC1F313D85006F63B1;
+					};
+				};
+			};
+			buildConfigurationList = 3D5054C81F313D85006F63B1 /* Build configuration list for PBXProject "wag-ios-challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D5054C41F313D85006F63B1;
+			productRefGroup = 3D5054CE1F313D85006F63B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D5054CC1F313D85006F63B1 /* wag-ios-challenge */,
+				3D5054E51F313D85006F63B1 /* wag-ios-challengeTests */,
+				3D5054F01F313D85006F63B1 /* wag-ios-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D5054CB1F313D85006F63B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5054E01F313D85006F63B1 /* LaunchScreen.storyboard in Resources */,
+				3D5054DD1F313D85006F63B1 /* Assets.xcassets in Resources */,
+				3D5054DB1F313D85006F63B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5054E41F313D85006F63B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5054EF1F313D85006F63B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085F67E375578930E2AA6A52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46256453724DB3F969349F72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wag-ios-challenge/Pods-wag-ios-challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E83B9E596489CDD80F4EBC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wag-ios-challenge/Pods-wag-ios-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84EF9A738289D65EAEB5ACF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F5DA7DC6F204E88B976AC25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wag-ios-challengeUITests/Pods-wag-ios-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99ABE248C95F7BB739201AC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A153C67182705E59AFC8C713 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4202386884C5AFF225147D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BC5228C22B3EEFF80A37AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wag-ios-challengeUITests/Pods-wag-ios-challengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D5054C91F313D85006F63B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5054D81F313D85006F63B1 /* ViewController.m in Sources */,
+				3D5054D51F313D85006F63B1 /* AppDelegate.m in Sources */,
+				3D5054D21F313D85006F63B1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5054E21F313D85006F63B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5054EB1F313D85006F63B1 /* wag_ios_challengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5054ED1F313D85006F63B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5054F61F313D85006F63B1 /* wag_ios_challengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D5054E81F313D85006F63B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D5054CC1F313D85006F63B1 /* wag-ios-challenge */;
+			targetProxy = 3D5054E71F313D85006F63B1 /* PBXContainerItemProxy */;
+		};
+		3D5054F31F313D85006F63B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D5054CC1F313D85006F63B1 /* wag-ios-challenge */;
+			targetProxy = 3D5054F21F313D85006F63B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D5054D91F313D85006F63B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D5054DA1F313D85006F63B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D5054DE1F313D85006F63B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D5054DF1F313D85006F63B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D5054F81F313D85006F63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D5054F91F313D85006F63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D5054FB1F313D85006F63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C805A7E430C057360265AA /* Pods-wag-ios-challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				INFOPLIST_FILE = "wag-ios-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.wag-ios-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D5054FC1F313D85006F63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E700811FCC61A4C67454DD2 /* Pods-wag-ios-challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				INFOPLIST_FILE = "wag-ios-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.wag-ios-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D5054FE1F313D85006F63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465A29ED0826C1D1BAFF56A8 /* Pods-wag-ios-challengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				INFOPLIST_FILE = "wag-ios-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.wag-ios-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wag-ios-challenge.app/wag-ios-challenge";
+			};
+			name = Debug;
+		};
+		3D5054FF1F313D85006F63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D165C6133F4DA629175EFA27 /* Pods-wag-ios-challengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				INFOPLIST_FILE = "wag-ios-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.wag-ios-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wag-ios-challenge.app/wag-ios-challenge";
+			};
+			name = Release;
+		};
+		3D5055011F313D85006F63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC700BB4932DBE0AEB9303E1 /* Pods-wag-ios-challengeUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				INFOPLIST_FILE = "wag-ios-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.wag-ios-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "wag-ios-challenge";
+			};
+			name = Debug;
+		};
+		3D5055021F313D85006F63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10DD22C1A07263199253280A /* Pods-wag-ios-challengeUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				INFOPLIST_FILE = "wag-ios-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.wag-ios-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "wag-ios-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D5054C81F313D85006F63B1 /* Build configuration list for PBXProject "wag-ios-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5054F81F313D85006F63B1 /* Debug */,
+				3D5054F91F313D85006F63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5054FA1F313D85006F63B1 /* Build configuration list for PBXNativeTarget "wag-ios-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5054FB1F313D85006F63B1 /* Debug */,
+				3D5054FC1F313D85006F63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5054FD1F313D85006F63B1 /* Build configuration list for PBXNativeTarget "wag-ios-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5054FE1F313D85006F63B1 /* Debug */,
+				3D5054FF1F313D85006F63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5055001F313D85006F63B1 /* Build configuration list for PBXNativeTarget "wag-ios-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5055011F313D85006F63B1 /* Debug */,
+				3D5055021F313D85006F63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D5054C51F313D85006F63B1 /* Project object */;
+}
