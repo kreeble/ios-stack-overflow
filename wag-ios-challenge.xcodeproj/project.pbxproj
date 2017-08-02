@@ -9,12 +9,27 @@
 /* Begin PBXBuildFile section */
 		3D5054D21F313D85006F63B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054D11F313D85006F63B1 /* main.m */; };
 		3D5054D51F313D85006F63B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054D41F313D85006F63B1 /* AppDelegate.m */; };
-		3D5054D81F313D85006F63B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054D71F313D85006F63B1 /* ViewController.m */; };
 		3D5054DB1F313D85006F63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5054D91F313D85006F63B1 /* Main.storyboard */; };
 		3D5054DD1F313D85006F63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5054DC1F313D85006F63B1 /* Assets.xcassets */; };
 		3D5054E01F313D85006F63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5054DE1F313D85006F63B1 /* LaunchScreen.storyboard */; };
-		3D5054EB1F313D85006F63B1 /* wag_ios_challengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054EA1F313D85006F63B1 /* wag_ios_challengeTests.m */; };
 		3D5054F61F313D85006F63B1 /* wag_ios_challengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5054F51F313D85006F63B1 /* wag_ios_challengeUITests.m */; };
+		3D5055101F3140AC006F63B1 /* KRStackOverflowApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50550F1F3140AC006F63B1 /* KRStackOverflowApiManager.m */; };
+		3D5055141F3143A9006F63B1 /* KRStackOverflowApiManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055131F3143A9006F63B1 /* KRStackOverflowApiManagerTest.m */; };
+		3D5055191F31460C006F63B1 /* KRStackOverflowUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055181F31460C006F63B1 /* KRStackOverflowUser.m */; };
+		3D50551F1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50551E1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.m */; };
+		3D5055221F31514C006F63B1 /* KRStackOverFlowUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055211F31514C006F63B1 /* KRStackOverFlowUserTest.m */; };
+		3D50552B1F315AAC006F63B1 /* KRStackOverflowUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */; };
+		3D5055301F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */; };
+		3D5055351F3173FA006F63B1 /* TEST-128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5055341F3173FA006F63B1 /* TEST-128@2x.png */; };
+		3D50554F1F3179AD006F63B1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3D5055381F3179AD006F63B1 /* .gitignore */; };
+		3D5055501F3179AD006F63B1 /* ESConstraintUtilities-Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */; };
+		3D5055511F3179AD006F63B1 /* NSObject+ESDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50553D1F3179AD006F63B1 /* NSObject+ESDescription.m */; };
+		3D5055521F3179AD006F63B1 /* ESConstraintUtilities-Install.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055401F3179AD006F63B1 /* ESConstraintUtilities-Install.m */; };
+		3D5055531F3179AD006F63B1 /* ESConstraintUtilities-Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055431F3179AD006F63B1 /* ESConstraintUtilities-Layout.m */; };
+		3D5055541F3179AD006F63B1 /* ESConstraintUtilities-Matching.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055461F3179AD006F63B1 /* ESConstraintUtilities-Matching.m */; };
+		3D5055551F3179AD006F63B1 /* NSObject+ESNametag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055481F3179AD006F63B1 /* NSObject+ESNametag.m */; };
+		3D5055561F3179AD006F63B1 /* UIView+ESConstraintHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50554E1F3179AD006F63B1 /* UIView+ESConstraintHelper.m */; };
+		3D50555A1F317C62006F63B1 /* KRAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055591F317C62006F63B1 /* KRAppStyle.m */; };
 		6D93605FD8BED9BD6FAAF1F7 /* libPods-wag-ios-challenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */; };
 		76CEDA8023328F74912C4B66 /* libPods-wag-ios-challengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72318B612F32921D9A70DBC /* libPods-wag-ios-challengeTests.a */; };
 		C9EC2744B8CC5791953A7ECA /* libPods-wag-ios-challengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7032399174EE82447BD572 /* libPods-wag-ios-challengeUITests.a */; };
@@ -45,18 +60,48 @@
 		3D5054D11F313D85006F63B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D5054D31F313D85006F63B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D5054D41F313D85006F63B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3D5054D61F313D85006F63B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3D5054D71F313D85006F63B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D5054DA1F313D85006F63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D5054DC1F313D85006F63B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5054DF1F313D85006F63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5054E11F313D85006F63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D5054E61F313D85006F63B1 /* wag-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wag-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5054EA1F313D85006F63B1 /* wag_ios_challengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wag_ios_challengeTests.m; sourceTree = "<group>"; };
 		3D5054EC1F313D85006F63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D5054F11F313D85006F63B1 /* wag-ios-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wag-ios-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5054F51F313D85006F63B1 /* wag_ios_challengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wag_ios_challengeUITests.m; sourceTree = "<group>"; };
 		3D5054F71F313D85006F63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D50550E1F3140AC006F63B1 /* KRStackOverflowApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowApiManager.h; sourceTree = "<group>"; };
+		3D50550F1F3140AC006F63B1 /* KRStackOverflowApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowApiManager.m; sourceTree = "<group>"; };
+		3D5055131F3143A9006F63B1 /* KRStackOverflowApiManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowApiManagerTest.m; sourceTree = "<group>"; };
+		3D5055171F31460C006F63B1 /* KRStackOverflowUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowUser.h; sourceTree = "<group>"; };
+		3D5055181F31460C006F63B1 /* KRStackOverflowUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUser.m; sourceTree = "<group>"; };
+		3D50551D1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowUserBadgeCounts.h; sourceTree = "<group>"; };
+		3D50551E1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserBadgeCounts.m; sourceTree = "<group>"; };
+		3D5055211F31514C006F63B1 /* KRStackOverFlowUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverFlowUserTest.m; sourceTree = "<group>"; };
+		3D5055291F315AAC006F63B1 /* KRStackOverflowUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowUserViewController.h; sourceTree = "<group>"; };
+		3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserViewController.m; sourceTree = "<group>"; };
+		3D50552E1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowUserTableViewCell.h; sourceTree = "<group>"; };
+		3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserTableViewCell.m; sourceTree = "<group>"; };
+		3D5055341F3173FA006F63B1 /* TEST-128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEST-128@2x.png"; sourceTree = "<group>"; };
+		3D5055381F3179AD006F63B1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3D50553A1F3179AD006F63B1 /* ESConstraintUtilities-Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraintUtilities-Description.h"; sourceTree = "<group>"; };
+		3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESConstraintUtilities-Description.m"; sourceTree = "<group>"; };
+		3D50553C1F3179AD006F63B1 /* NSObject+ESDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ESDescription.h"; sourceTree = "<group>"; };
+		3D50553D1F3179AD006F63B1 /* NSObject+ESDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ESDescription.m"; sourceTree = "<group>"; };
+		3D50553F1F3179AD006F63B1 /* ESConstraintUtilities-Install.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraintUtilities-Install.h"; sourceTree = "<group>"; };
+		3D5055401F3179AD006F63B1 /* ESConstraintUtilities-Install.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESConstraintUtilities-Install.m"; sourceTree = "<group>"; };
+		3D5055421F3179AD006F63B1 /* ESConstraintUtilities-Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraintUtilities-Layout.h"; sourceTree = "<group>"; };
+		3D5055431F3179AD006F63B1 /* ESConstraintUtilities-Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESConstraintUtilities-Layout.m"; sourceTree = "<group>"; };
+		3D5055451F3179AD006F63B1 /* ESConstraintUtilities-Matching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraintUtilities-Matching.h"; sourceTree = "<group>"; };
+		3D5055461F3179AD006F63B1 /* ESConstraintUtilities-Matching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESConstraintUtilities-Matching.m"; sourceTree = "<group>"; };
+		3D5055471F3179AD006F63B1 /* NSObject+ESNametag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ESNametag.h"; sourceTree = "<group>"; };
+		3D5055481F3179AD006F63B1 /* NSObject+ESNametag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ESNametag.m"; sourceTree = "<group>"; };
+		3D5055491F3179AD006F63B1 /* ESAutoLayoutUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAutoLayoutUtility.h; sourceTree = "<group>"; };
+		3D50554A1F3179AD006F63B1 /* ESConstraints-CreationMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraints-CreationMacros.h"; sourceTree = "<group>"; };
+		3D50554B1F3179AD006F63B1 /* ESConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConstraints.h; sourceTree = "<group>"; };
+		3D50554D1F3179AD006F63B1 /* UIView+ESConstraintHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ESConstraintHelper.h"; sourceTree = "<group>"; };
+		3D50554E1F3179AD006F63B1 /* UIView+ESConstraintHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ESConstraintHelper.m"; sourceTree = "<group>"; };
+		3D5055581F317C62006F63B1 /* KRAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAppStyle.h; sourceTree = "<group>"; };
+		3D5055591F317C62006F63B1 /* KRAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAppStyle.m; sourceTree = "<group>"; };
 		465A29ED0826C1D1BAFF56A8 /* Pods-wag-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wag-ios-challenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C805A7E430C057360265AA /* Pods-wag-ios-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challenge/Pods-wag-ios-challenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +165,7 @@
 			children = (
 				3D5055031F313E73006F63B1 /* Classes */,
 				3D5055051F313E88006F63B1 /* App Resources */,
+				3D5055321F3173B2006F63B1 /* Resources */,
 				3D5054D01F313D85006F63B1 /* Supporting Files */,
 			);
 			path = "wag-ios-challenge";
@@ -137,7 +183,7 @@
 		3D5054E91F313D85006F63B1 /* wag-ios-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D5054EA1F313D85006F63B1 /* wag_ios_challengeTests.m */,
+				3D5055121F314396006F63B1 /* Classes */,
 				3D5055071F313EC8006F63B1 /* Supporting Files */,
 			);
 			path = "wag-ios-challengeTests";
@@ -155,9 +201,15 @@
 		3D5055031F313E73006F63B1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3D5055571F317C24006F63B1 /* App Style */,
+				3D5055371F3179AD006F63B1 /* ESAutoLayout */,
 				3D5055041F313E7B006F63B1 /* App Delegate */,
-				3D5054D61F313D85006F63B1 /* ViewController.h */,
-				3D5054D71F313D85006F63B1 /* ViewController.m */,
+				3D5055241F315A6A006F63B1 /* ---- High Level ---- */,
+				3D5055251F315A7E006F63B1 /* Stack Overflow User View Controller */,
+				3D50552C1F315AC5006F63B1 /* ---- Function Level ---- */,
+				3D5055091F314033006F63B1 /* Stack Overflow Api Manager */,
+				3D50552D1F315AD2006F63B1 /* ---- Low Level ---- */,
+				3D5055151F3145E2006F63B1 /* Domain Model */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -195,6 +247,173 @@
 				3D5054F71F313D85006F63B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D5055091F314033006F63B1 /* Stack Overflow Api Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3D50550E1F3140AC006F63B1 /* KRStackOverflowApiManager.h */,
+				3D50550F1F3140AC006F63B1 /* KRStackOverflowApiManager.m */,
+			);
+			name = "Stack Overflow Api Manager";
+			sourceTree = "<group>";
+		};
+		3D5055121F314396006F63B1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055231F31514F006F63B1 /* Stack Overflow Api Manager */,
+				3D5055201F31513C006F63B1 /* Domain Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3D5055151F3145E2006F63B1 /* Domain Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055171F31460C006F63B1 /* KRStackOverflowUser.h */,
+				3D5055181F31460C006F63B1 /* KRStackOverflowUser.m */,
+				3D50551D1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.h */,
+				3D50551E1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.m */,
+			);
+			name = "Domain Model";
+			sourceTree = "<group>";
+		};
+		3D5055201F31513C006F63B1 /* Domain Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055211F31514C006F63B1 /* KRStackOverFlowUserTest.m */,
+			);
+			name = "Domain Model";
+			sourceTree = "<group>";
+		};
+		3D5055231F31514F006F63B1 /* Stack Overflow Api Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055131F3143A9006F63B1 /* KRStackOverflowApiManagerTest.m */,
+			);
+			name = "Stack Overflow Api Manager";
+			sourceTree = "<group>";
+		};
+		3D5055241F315A6A006F63B1 /* ---- High Level ---- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "---- High Level ----";
+			sourceTree = "<group>";
+		};
+		3D5055251F315A7E006F63B1 /* Stack Overflow User View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055291F315AAC006F63B1 /* KRStackOverflowUserViewController.h */,
+				3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */,
+				3D50552E1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.h */,
+				3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */,
+			);
+			name = "Stack Overflow User View Controller";
+			sourceTree = "<group>";
+		};
+		3D50552C1F315AC5006F63B1 /* ---- Function Level ---- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "---- Function Level ----";
+			sourceTree = "<group>";
+		};
+		3D50552D1F315AD2006F63B1 /* ---- Low Level ---- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "---- Low Level ----";
+			sourceTree = "<group>";
+		};
+		3D5055321F3173B2006F63B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055331F3173B2006F63B1 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D5055331F3173B2006F63B1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055341F3173FA006F63B1 /* TEST-128@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3D5055371F3179AD006F63B1 /* ESAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055381F3179AD006F63B1 /* .gitignore */,
+				3D5055391F3179AD006F63B1 /* Constraint Description */,
+				3D50553E1F3179AD006F63B1 /* Constraint Install */,
+				3D5055411F3179AD006F63B1 /* Constraint Layout */,
+				3D5055441F3179AD006F63B1 /* Constraint Matching */,
+				3D5055491F3179AD006F63B1 /* ESAutoLayoutUtility.h */,
+				3D50554A1F3179AD006F63B1 /* ESConstraints-CreationMacros.h */,
+				3D50554B1F3179AD006F63B1 /* ESConstraints.h */,
+				3D50554C1F3179AD006F63B1 /* Other */,
+			);
+			path = ESAutoLayout;
+			sourceTree = "<group>";
+		};
+		3D5055391F3179AD006F63B1 /* Constraint Description */ = {
+			isa = PBXGroup;
+			children = (
+				3D50553A1F3179AD006F63B1 /* ESConstraintUtilities-Description.h */,
+				3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */,
+				3D50553C1F3179AD006F63B1 /* NSObject+ESDescription.h */,
+				3D50553D1F3179AD006F63B1 /* NSObject+ESDescription.m */,
+			);
+			path = "Constraint Description";
+			sourceTree = "<group>";
+		};
+		3D50553E1F3179AD006F63B1 /* Constraint Install */ = {
+			isa = PBXGroup;
+			children = (
+				3D50553F1F3179AD006F63B1 /* ESConstraintUtilities-Install.h */,
+				3D5055401F3179AD006F63B1 /* ESConstraintUtilities-Install.m */,
+			);
+			path = "Constraint Install";
+			sourceTree = "<group>";
+		};
+		3D5055411F3179AD006F63B1 /* Constraint Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055421F3179AD006F63B1 /* ESConstraintUtilities-Layout.h */,
+				3D5055431F3179AD006F63B1 /* ESConstraintUtilities-Layout.m */,
+			);
+			path = "Constraint Layout";
+			sourceTree = "<group>";
+		};
+		3D5055441F3179AD006F63B1 /* Constraint Matching */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055451F3179AD006F63B1 /* ESConstraintUtilities-Matching.h */,
+				3D5055461F3179AD006F63B1 /* ESConstraintUtilities-Matching.m */,
+				3D5055471F3179AD006F63B1 /* NSObject+ESNametag.h */,
+				3D5055481F3179AD006F63B1 /* NSObject+ESNametag.m */,
+			);
+			path = "Constraint Matching";
+			sourceTree = "<group>";
+		};
+		3D50554C1F3179AD006F63B1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3D50554D1F3179AD006F63B1 /* UIView+ESConstraintHelper.h */,
+				3D50554E1F3179AD006F63B1 /* UIView+ESConstraintHelper.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D5055571F317C24006F63B1 /* App Style */ = {
+			isa = PBXGroup;
+			children = (
+				3D5055581F317C62006F63B1 /* KRAppStyle.h */,
+				3D5055591F317C62006F63B1 /* KRAppStyle.m */,
+			);
+			name = "App Style";
 			sourceTree = "<group>";
 		};
 		8745C912B044243F5FB0A0F1 /* Pods */ = {
@@ -338,6 +557,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D50554F1F3179AD006F63B1 /* .gitignore in Resources */,
+				3D5055351F3173FA006F63B1 /* TEST-128@2x.png in Resources */,
 				3D5054E01F313D85006F63B1 /* LaunchScreen.storyboard in Resources */,
 				3D5054DD1F313D85006F63B1 /* Assets.xcassets in Resources */,
 				3D5054DB1F313D85006F63B1 /* Main.storyboard in Resources */,
@@ -503,9 +724,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5054D81F313D85006F63B1 /* ViewController.m in Sources */,
+				3D5055541F3179AD006F63B1 /* ESConstraintUtilities-Matching.m in Sources */,
+				3D5055501F3179AD006F63B1 /* ESConstraintUtilities-Description.m in Sources */,
+				3D50555A1F317C62006F63B1 /* KRAppStyle.m in Sources */,
 				3D5054D51F313D85006F63B1 /* AppDelegate.m in Sources */,
+				3D50551F1F314BBB006F63B1 /* KRStackOverflowUserBadgeCounts.m in Sources */,
+				3D5055101F3140AC006F63B1 /* KRStackOverflowApiManager.m in Sources */,
+				3D5055531F3179AD006F63B1 /* ESConstraintUtilities-Layout.m in Sources */,
+				3D50552B1F315AAC006F63B1 /* KRStackOverflowUserViewController.m in Sources */,
+				3D5055561F3179AD006F63B1 /* UIView+ESConstraintHelper.m in Sources */,
+				3D5055191F31460C006F63B1 /* KRStackOverflowUser.m in Sources */,
+				3D5055551F3179AD006F63B1 /* NSObject+ESNametag.m in Sources */,
+				3D5055301F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m in Sources */,
 				3D5054D21F313D85006F63B1 /* main.m in Sources */,
+				3D5055511F3179AD006F63B1 /* NSObject+ESDescription.m in Sources */,
+				3D5055521F3179AD006F63B1 /* ESConstraintUtilities-Install.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +746,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5054EB1F313D85006F63B1 /* wag_ios_challengeTests.m in Sources */,
+				3D5055221F31514C006F63B1 /* KRStackOverFlowUserTest.m in Sources */,
+				3D5055141F3143A9006F63B1 /* KRStackOverflowApiManagerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
