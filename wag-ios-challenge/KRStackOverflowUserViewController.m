@@ -108,8 +108,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 	userCell.nameLabel.text = user.displayName;
 	userCell.reputationLabel.text = [NSString localizedStringWithFormat:@"%@", @(user.reputation)];
-	userCell.goldBadgeLabel.text = [@(user.badgeCounts.bronze) stringValue];
-	userCell.silverBadgeLabel.text = [@(user.badgeCounts.bronze) stringValue];
+	userCell.goldBadgeLabel.text = [@(user.badgeCounts.gold) stringValue];
+	userCell.silverBadgeLabel.text = [@(user.badgeCounts.silver) stringValue];
 	userCell.bronzeBadgeLabel.text = [@(user.badgeCounts.bronze) stringValue];
 }
 

@@ -33,8 +33,8 @@ static const CGFloat KRReputationLabelTopMargin		= 3.5;
 
 // badge count
 // -- image view
-static const CGFloat KRBadgeCountImageViewSizePts	= 16.0;
-static const CGFloat KRBadgeCountImageViewLeftPts	= 4.0;
+static const CGFloat KRBadgeCountImageViewSizePts	= 10.0;
+static const CGFloat KRBadgeCountImageViewLeftPts	= 6.0;
 
 static const CGFloat KRFirstBadgeCountImageViewLeftMargin = 8.0;
 // -- label
@@ -388,7 +388,7 @@ static NSString *const KRBadgeCountImageViewLeftTag = @"badge count image view l
 	const NSUInteger kBadgesCount = 3;
 	NSMutableArray<UIImageView *> *mutaImageViews = [NSMutableArray new];
 	for (NSUInteger i = 0; i < kBadgesCount; i++) {
-		imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TEST-128"]];
+		imageView = [[UIImageView alloc] initWithImage:nil];
 		imageView.layer.opaque = YES;
 		imageView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
 		imageView.layer.shouldRasterize = YES;
@@ -396,10 +396,13 @@ static NSString *const KRBadgeCountImageViewLeftTag = @"badge count image view l
 		[mutaImageViews addObject:imageView];
 	}
 	_goldBadgeImageView = mutaImageViews[0];
+	_goldBadgeImageView.image = [UIImage imageNamed:@"GoldBadge"];
 	[self.contentView addSubview:_goldBadgeImageView];
 	_silverBadgeImageView = mutaImageViews[1];
+	_silverBadgeImageView.image = [UIImage imageNamed:@"SilverBadge"];
 	[self.contentView addSubview:_silverBadgeImageView];
 	_bronzeBadgeImageView = mutaImageViews[2];
+	_bronzeBadgeImageView.image = [UIImage imageNamed:@"BronzeBadge"];
 	[self.contentView addSubview:_bronzeBadgeImageView];
 	mutaImageViews = nil;
 

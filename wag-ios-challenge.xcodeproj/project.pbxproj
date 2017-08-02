@@ -20,7 +20,6 @@
 		3D5055221F31514C006F63B1 /* KRStackOverFlowUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055211F31514C006F63B1 /* KRStackOverFlowUserTest.m */; };
 		3D50552B1F315AAC006F63B1 /* KRStackOverflowUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */; };
 		3D5055301F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */; };
-		3D5055351F3173FA006F63B1 /* TEST-128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5055341F3173FA006F63B1 /* TEST-128@2x.png */; };
 		3D50554F1F3179AD006F63B1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3D5055381F3179AD006F63B1 /* .gitignore */; };
 		3D5055501F3179AD006F63B1 /* ESConstraintUtilities-Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */; };
 		3D5055511F3179AD006F63B1 /* NSObject+ESDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50553D1F3179AD006F63B1 /* NSObject+ESDescription.m */; };
@@ -32,6 +31,9 @@
 		3D50555A1F317C62006F63B1 /* KRAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055591F317C62006F63B1 /* KRAppStyle.m */; };
 		3D7A483A1F319ACC002298DB /* KRRemoteImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A48391F319ACC002298DB /* KRRemoteImageCache.m */; };
 		3D7A483C1F31B87A002298DB /* UserEmptyProfileImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A483B1F31B87A002298DB /* UserEmptyProfileImage@2x.png */; };
+		3D7A483E1F31E917002298DB /* GoldBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A483D1F31E917002298DB /* GoldBadge@2x.png */; };
+		3D7A48411F31EA2B002298DB /* BronzeBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A483F1F31EA2B002298DB /* BronzeBadge@2x.png */; };
+		3D7A48421F31EA2B002298DB /* SilverBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A48401F31EA2B002298DB /* SilverBadge@2x.png */; };
 		6D93605FD8BED9BD6FAAF1F7 /* libPods-wag-ios-challenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */; };
 		76CEDA8023328F74912C4B66 /* libPods-wag-ios-challengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72318B612F32921D9A70DBC /* libPods-wag-ios-challengeTests.a */; };
 		C9EC2744B8CC5791953A7ECA /* libPods-wag-ios-challengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7032399174EE82447BD572 /* libPods-wag-ios-challengeUITests.a */; };
@@ -83,7 +85,6 @@
 		3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserViewController.m; sourceTree = "<group>"; };
 		3D50552E1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowUserTableViewCell.h; sourceTree = "<group>"; };
 		3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserTableViewCell.m; sourceTree = "<group>"; };
-		3D5055341F3173FA006F63B1 /* TEST-128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEST-128@2x.png"; sourceTree = "<group>"; };
 		3D5055381F3179AD006F63B1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3D50553A1F3179AD006F63B1 /* ESConstraintUtilities-Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraintUtilities-Description.h"; sourceTree = "<group>"; };
 		3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESConstraintUtilities-Description.m"; sourceTree = "<group>"; };
@@ -107,6 +108,9 @@
 		3D7A48381F319ACC002298DB /* KRRemoteImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRRemoteImageCache.h; sourceTree = "<group>"; };
 		3D7A48391F319ACC002298DB /* KRRemoteImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRRemoteImageCache.m; sourceTree = "<group>"; };
 		3D7A483B1F31B87A002298DB /* UserEmptyProfileImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserEmptyProfileImage@2x.png"; sourceTree = "<group>"; };
+		3D7A483D1F31E917002298DB /* GoldBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoldBadge@2x.png"; sourceTree = "<group>"; };
+		3D7A483F1F31EA2B002298DB /* BronzeBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BronzeBadge@2x.png"; sourceTree = "<group>"; };
+		3D7A48401F31EA2B002298DB /* SilverBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SilverBadge@2x.png"; sourceTree = "<group>"; };
 		465A29ED0826C1D1BAFF56A8 /* Pods-wag-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wag-ios-challenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C805A7E430C057360265AA /* Pods-wag-ios-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challenge/Pods-wag-ios-challenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -343,8 +347,10 @@
 		3D5055331F3173B2006F63B1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3D7A483F1F31EA2B002298DB /* BronzeBadge@2x.png */,
+				3D7A48401F31EA2B002298DB /* SilverBadge@2x.png */,
+				3D7A483D1F31E917002298DB /* GoldBadge@2x.png */,
 				3D7A483B1F31B87A002298DB /* UserEmptyProfileImage@2x.png */,
-				3D5055341F3173FA006F63B1 /* TEST-128@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -574,11 +580,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D50554F1F3179AD006F63B1 /* .gitignore in Resources */,
-				3D5055351F3173FA006F63B1 /* TEST-128@2x.png in Resources */,
+				3D7A48411F31EA2B002298DB /* BronzeBadge@2x.png in Resources */,
 				3D5054E01F313D85006F63B1 /* LaunchScreen.storyboard in Resources */,
+				3D7A483E1F31E917002298DB /* GoldBadge@2x.png in Resources */,
 				3D7A483C1F31B87A002298DB /* UserEmptyProfileImage@2x.png in Resources */,
 				3D5054DD1F313D85006F63B1 /* Assets.xcassets in Resources */,
 				3D5054DB1F313D85006F63B1 /* Main.storyboard in Resources */,
+				3D7A48421F31EA2B002298DB /* SilverBadge@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
