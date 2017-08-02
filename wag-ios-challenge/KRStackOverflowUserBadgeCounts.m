@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @implementation KRStackOverflowUserBadgeCounts
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"{bronze = '%lu', silver = '%lu', gold = '%lu'}", self.bronze, self.silver, self.gold];
+	return [NSString stringWithFormat:@"{bronze = '%lu', silver = '%lu', gold = '%lu'}", (unsigned long)self.bronze, (unsigned long)self.silver, (unsigned long)self.gold];
 }
 
 @end

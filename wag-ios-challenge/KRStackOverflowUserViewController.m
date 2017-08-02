@@ -38,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @implementation KRStackOverflowUserViewController
+
+// table cell
 #define KRUserTableCellId	@"KRStackOverflowUserTableViewCell"
 // ----
 
@@ -114,10 +116,10 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 #pragma mark - UITableViewDelegate
-
+/*
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 }
-
+*/
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -127,13 +129,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
+	// setup view
 	[self setUpTableView];
 	[self setUpLoadingView];
 
 	// initial actions
 	[self showLoadingView:YES];
 	[self fetchUsers];
-	//[self DEBUGSetUpTestUsers];
 }
 
 - (void)setUpTableView {
@@ -152,6 +154,7 @@ NS_ASSUME_NONNULL_BEGIN
 	self.loadingView = loadingView;
 	self.tableView.backgroundView = self.loadingView;
 
+	// don't use autolayout since it will flicker on scroll
 	self.loadingView.frame = (CGRect) { 0, 0, 36, 36 };
 	self.loadingView.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
 }

@@ -19,9 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 	return [self initWithJsonDictionary:@{}];
 }
 
-// note: ideally we would create our own generic JSON unmarshalling library that
+// note: ideally we would create our own generic JSON de/serializer library that
 // uses reflection to fill an instance's properties with values from the JSON,
-// or use a library like JSONModel. in the interest of time and scope,
+// or use a library like JSONModel. for time and scope,
 // we will manually populate our class' properties from the JSON.
 - (instancetype)initWithJsonDictionary:(NSDictionary *)json {
 	if (self = [super init]) {
@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"{userId = %lu, reputation = %lu, displayName = '%@', profileImage = '%@', badgeCounts = '%@'}", self.userId, self.reputation, self.displayName, self.profileImage, self.badgeCounts];
+	return [NSString stringWithFormat:@"{userId = %lu, reputation = %lu, displayName = '%@', profileImage = '%@', badgeCounts = '%@'}", (unsigned long)self.userId, (unsigned long)self.reputation, self.displayName, self.profileImage, self.badgeCounts];
 }
 
 @end

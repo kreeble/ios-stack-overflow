@@ -34,10 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 	self.apiManager = [KRStackOverflowApiManager new];
 	[self.apiManager fetchUsersWithCompletion:^(NSArray<id> * _Nonnull users, NSError * _Nullable error) {
 		NSLog(@"users: %@", users);
+		XCTAssertTrue(users.count > 0);
+		[self.expFetchUsers fulfill];
 	}];
 
 	[self waitForExpectationsWithTimeout:5.0 handler:^(NSError * _Nullable error) {
-
 	}];
 }
 
