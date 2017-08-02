@@ -22,7 +22,7 @@ static const CGFloat KRProfileImageViewLeftPts	= 4.0;
 
 // name label
 static const CGFloat KRNameLabelHeightPts	= 18.0;
-static const CGFloat KRNameLabelLeftMargin	= 5.0;
+static const CGFloat KRNameLabelLeftMargin	= 6.0;
 static const CGFloat KRNameLabelRightMargin	= 4.0;
 static const CGFloat KRNameLabelTopMargin	= 5.0;
 
@@ -52,16 +52,28 @@ static const CGFloat KRBadgeCountLabelLeft			= 4.0;
 	[super setSelected:selected animated:animated];
 }
 
+#pragma mark - Profile Image
+
+- (void)showProfileImageLoadingView:(BOOL)show {
+	self.profileImageView.hidden = show;
+	if (show) {
+		[self.profileImageLoadingView startAnimating];
+	} else {
+		[self.profileImageLoadingView stopAnimating];
+	}
+}
+
 #pragma mark - Auto-Layout
 
 - (void)addAllConstraints {
 	[self addConstraintsProfileImageView];
+	[self addConstraintsProfileLoadingView];
 	[self addConstraintsNameLabel];
 	[self addConstraintsReputationLabel];
 	[self addConstraintsBadgeCountViews];
 }
 
-#pragma mark - Profile Image View
+#pragma mark ---- Profile Image View
 
 - (void)addConstraintsProfileImageView {
 	UIView *itView = self.profileImageView;
@@ -101,7 +113,22 @@ static const CGFloat KRBadgeCountLabelLeft			= 4.0;
 													  constant:KRProfileImageViewLeftPts]);
 }
 
-#pragma mark - Name Label
+#pragma mark ---- Profile Loading View
+
+- (void)addConstraintsProfileLoadingView {
+	UIView *itView = self.profileImageLoadingView;
+	// hug / resist
+	HUG(itView, UILayoutPriorityDefaultHigh);
+	RESIST(itView, UILayoutPriorityDefaultHigh);
+
+	// size
+	MATCH_SIZE(itView, self.profileImageView);
+
+	// vert
+	MATCH_CENTERS(itView, self.profileImageView);
+}
+
+#pragma mark ---- Name Label
 
 - (void)addConstraintsNameLabel {
 	UIView *itView = self.nameLabel;
@@ -148,7 +175,7 @@ static const CGFloat KRBadgeCountLabelLeft			= 4.0;
 													  constant:KRNameLabelTopMargin]);
 }
 
-#pragma mark - Reputation Label
+#pragma mark ---- Reputation Label
 
 - (void)addConstraintsReputationLabel {
 	UIView *itView = self.reputationLabel;
@@ -187,7 +214,7 @@ static const CGFloat KRBadgeCountLabelLeft			= 4.0;
 													  constant:KRReputationLabelTopMargin]);
 }
 
-#pragma mark - Badge Count
+#pragma mark ---- Badge Count
 
 - (void)addConstraintsBadgeCountViews {
 	[self addConstraintsBadgeCountImageView:self.goldBadgeImageView
@@ -322,6 +349,9 @@ static NSString *const KRBadgeCountImageViewLeftTag = @"badge count image view l
 	self.goldBadgeLabel.textColor	= [KRAppStyle stackOverflowUserBadgeCountColor];
 	self.silverBadgeLabel.textColor	= [KRAppStyle stackOverflowUserBadgeCountColor];
 	self.bronzeBadgeLabel.textColor	= [KRAppStyle stackOverflowUserBadgeCountColor];
+
+	// profile image
+	//self.profileImageLoadingView.backgroundColor = [UIColor colorWithWhite:0.98 alpha:1.0];
 }
 
 - (void)setUpViewComponents {
@@ -332,12 +362,15 @@ static NSString *const KRBadgeCountImageViewLeftTag = @"badge count image view l
 
 	// profile image view
 	UIImageView *imageView = [[UIImageView alloc] initWithImage:nil];
-	//	imageView.layer.opaque = YES;
-	//	imageView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
-	//	imageView.layer.shouldRasterize = YES;
 	_profileImageView = imageView;
 	_profileImageView.translatesAutoresizingMaskIntoConstraints = NO;
 	[self.contentView addSubview:_profileImageView];
+
+	// profile image loading view
+	UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+	_profileImageLoadingView = loadingView;
+	_profileImageLoadingView.translatesAutoresizingMaskIntoConstraints = NO;
+	[self.contentView addSubview:_profileImageLoadingView];
 
 	// name label
 	UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];

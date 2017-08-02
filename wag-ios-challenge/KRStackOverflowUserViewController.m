@@ -18,6 +18,9 @@
 // api manager
 #import "KRStackOverflowApiManager.h"
 
+// user image cache
+#import "KRUserImageCacheUtil.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KRStackOverflowUserViewController ()
@@ -64,7 +67,27 @@ NS_ASSUME_NONNULL_BEGIN
 	KRStackOverflowUserTableViewCell *userCell = (KRStackOverflowUserTableViewCell *)cell;
 	KRStackOverflowUser *user = self.users[indexPath.row];
 
-	userCell.profileImageView.image = [UIImage imageNamed:@"TEST-128"];
+	// profile image
+	UIImage *profileImage = [KRUserImageCacheUtil fastCachedImageForUrl:user.profileImage];
+	if (profileImage != nil) {
+		NSLog(@"in memory cache hit!");
+		userCell.profileImageView.image = profileImage;
+		[userCell showProfileImageLoadingView:NO];
+	} else {
+		[userCell showProfileImageLoadingView:YES];
+		__weak typeof(self) weakSelf = self;
+		[KRUserImageCacheUtil slowCachedImageForUrl:user.profileImage
+										 completion:^(UIImage *_Nullable image)
+		 {
+			 typeof(self) strongSelf = weakSelf;
+			 KRStackOverflowUserTableViewCell *visibleUserCell = [strongSelf.tableView cellForRowAtIndexPath:indexPath];
+			 if (visibleUserCell != nil) {
+				 [visibleUserCell showProfileImageLoadingView:NO];
+				 visibleUserCell.profileImageView.image = (image != nil ? image : [UIImage imageNamed:@"UserEmptyProfileImage"]);
+			 }
+		 }];
+	}
+
 	userCell.nameLabel.text = user.displayName;
 	userCell.reputationLabel.text = [NSString localizedStringWithFormat:@"%@", @(user.reputation)];
 	userCell.goldBadgeLabel.text = [@(user.badgeCounts.bronze) stringValue];
@@ -88,8 +111,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 	[self setUpTableView];
 
-	//[self fetchUsers];
-	[self DEBUGSetUpTestUsers];
+	[self fetchUsers];
+	//[self DEBUGSetUpTestUsers];
 }
 
 - (void)DEBUGSetUpTestUsers {
@@ -163,6 +186,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
+
+	NSLog(@"memory warning");
+	[KRUserImageCacheUtil clearInMemoryCache];
 }
 
 @end

@@ -12,12 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KRStackOverflowUserTableViewCell : UITableViewCell
 
+#pragma mark - View Components
 @property (nonatomic, strong) UIImageView *profileImageView;
+@property (nonatomic, strong) UIActivityIndicatorView *profileImageLoadingView;
 @property (nonatomic, strong) UILabel *nameLabel;
 @property (nonatomic, strong) UILabel *reputationLabel;
 
-// we could componentize the badge counts into a view but this will reduce performance
-// because of rendering another layer of alpha transparency.
+// note: we could componentize the badge counts into a view but this will reduce
+// performance because of rendering another layer of alpha transparency.
 @property (nonatomic, strong) UIImageView *goldBadgeImageView;
 @property (nonatomic, strong) UILabel *goldBadgeLabel;
 @property (nonatomic, strong) UIImageView *silverBadgeImageView;
@@ -27,6 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Class Constants
 + (CGFloat)fixedHeight;
+
+#pragma mark - Profile Image
+- (void)showProfileImageLoadingView:(BOOL)show;
 @end
 
 NS_ASSUME_NONNULL_END
