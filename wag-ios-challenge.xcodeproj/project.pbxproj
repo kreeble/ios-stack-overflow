@@ -30,7 +30,7 @@
 		3D5055551F3179AD006F63B1 /* NSObject+ESNametag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055481F3179AD006F63B1 /* NSObject+ESNametag.m */; };
 		3D5055561F3179AD006F63B1 /* UIView+ESConstraintHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50554E1F3179AD006F63B1 /* UIView+ESConstraintHelper.m */; };
 		3D50555A1F317C62006F63B1 /* KRAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055591F317C62006F63B1 /* KRAppStyle.m */; };
-		3D7A483A1F319ACC002298DB /* KRUserImageCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A48391F319ACC002298DB /* KRUserImageCacheUtil.m */; };
+		3D7A483A1F319ACC002298DB /* KRRemoteImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A48391F319ACC002298DB /* KRRemoteImageCache.m */; };
 		3D7A483C1F31B87A002298DB /* UserEmptyProfileImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A483B1F31B87A002298DB /* UserEmptyProfileImage@2x.png */; };
 		6D93605FD8BED9BD6FAAF1F7 /* libPods-wag-ios-challenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */; };
 		76CEDA8023328F74912C4B66 /* libPods-wag-ios-challengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72318B612F32921D9A70DBC /* libPods-wag-ios-challengeTests.a */; };
@@ -104,8 +104,8 @@
 		3D50554E1F3179AD006F63B1 /* UIView+ESConstraintHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ESConstraintHelper.m"; sourceTree = "<group>"; };
 		3D5055581F317C62006F63B1 /* KRAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAppStyle.h; sourceTree = "<group>"; };
 		3D5055591F317C62006F63B1 /* KRAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAppStyle.m; sourceTree = "<group>"; };
-		3D7A48381F319ACC002298DB /* KRUserImageCacheUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRUserImageCacheUtil.h; sourceTree = "<group>"; };
-		3D7A48391F319ACC002298DB /* KRUserImageCacheUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRUserImageCacheUtil.m; sourceTree = "<group>"; };
+		3D7A48381F319ACC002298DB /* KRRemoteImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRRemoteImageCache.h; sourceTree = "<group>"; };
+		3D7A48391F319ACC002298DB /* KRRemoteImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRRemoteImageCache.m; sourceTree = "<group>"; };
 		3D7A483B1F31B87A002298DB /* UserEmptyProfileImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserEmptyProfileImage@2x.png"; sourceTree = "<group>"; };
 		465A29ED0826C1D1BAFF56A8 /* Pods-wag-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wag-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wag-ios-challengeTests/Pods-wag-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53B9F4BCCC6CCC5CC6D0CD99 /* libPods-wag-ios-challenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wag-ios-challenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,7 +212,7 @@
 				3D5055241F315A6A006F63B1 /* ---- High Level ---- */,
 				3D5055251F315A7E006F63B1 /* Stack Overflow User View Controller */,
 				3D50552C1F315AC5006F63B1 /* ---- Function Level ---- */,
-				3D7A48371F319AA6002298DB /* User Image Cache */,
+				3D7A48371F319AA6002298DB /* Remote Image Cache */,
 				3D5055091F314033006F63B1 /* Stack Overflow Api Manager */,
 				3D50552D1F315AD2006F63B1 /* ---- Low Level ---- */,
 				3D5055151F3145E2006F63B1 /* Domain Model */,
@@ -423,13 +423,13 @@
 			name = "App Style";
 			sourceTree = "<group>";
 		};
-		3D7A48371F319AA6002298DB /* User Image Cache */ = {
+		3D7A48371F319AA6002298DB /* Remote Image Cache */ = {
 			isa = PBXGroup;
 			children = (
-				3D7A48381F319ACC002298DB /* KRUserImageCacheUtil.h */,
-				3D7A48391F319ACC002298DB /* KRUserImageCacheUtil.m */,
+				3D7A48381F319ACC002298DB /* KRRemoteImageCache.h */,
+				3D7A48391F319ACC002298DB /* KRRemoteImageCache.m */,
 			);
-			name = "User Image Cache";
+			name = "Remote Image Cache";
 			sourceTree = "<group>";
 		};
 		8745C912B044243F5FB0A0F1 /* Pods */ = {
@@ -742,7 +742,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5055541F3179AD006F63B1 /* ESConstraintUtilities-Matching.m in Sources */,
-				3D7A483A1F319ACC002298DB /* KRUserImageCacheUtil.m in Sources */,
+				3D7A483A1F319ACC002298DB /* KRRemoteImageCache.m in Sources */,
 				3D5055501F3179AD006F63B1 /* ESConstraintUtilities-Description.m in Sources */,
 				3D50555A1F317C62006F63B1 /* KRAppStyle.m in Sources */,
 				3D5054D51F313D85006F63B1 /* AppDelegate.m in Sources */,

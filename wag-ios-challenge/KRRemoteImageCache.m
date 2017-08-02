@@ -1,19 +1,19 @@
 //
-//  KRStackOverflowUserImageCacheUtil.m
+//  KRRemoteImageCache.m
 //  wag-ios-challenge
 //
 //  Created by kreeble on 8/1/17.
 //  Copyright © 2017 kreeble. All rights reserved.
 //
 
-#import "KRUserImageCacheUtil.h"
+#import "KRRemoteImageCache.h"
 @import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation KRUserImageCacheUtil
+@implementation KRRemoteImageCache
 
-static NSString *const KRCacheDiskPath = @"stackoverflow-user-image-cache";
+static NSString *const KRCacheDiskPath = @"KRRemoteImageCache";
 
 #define KRMegaByte	(1024 * 1024)
 
@@ -26,7 +26,7 @@ static NSString *const KRCacheDiskPath = @"stackoverflow-user-image-cache";
 }
 
 + (void)slowCachedImageForUrl:(NSURL *)url
-				   completion:(KRUserImageCacheFetchImageCompletion)completion
+				   completion:(KRRemoteImageCacheFetchCompletion)completion
 {
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
 		// check disk cache
@@ -100,10 +100,6 @@ static NSString *const KRCacheDiskPath = @"stackoverflow-user-image-cache";
 													  diskPath:KRCacheDiskPath];
 	});
 	return _urlCache;
-}
-
-+ (void)setUpUrlCache {
-	if ([self urlCache]) {} // suppress warning with if
 }
 
 #pragma mark - NSURLSession

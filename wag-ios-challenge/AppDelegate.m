@@ -8,9 +8,6 @@
 
 #import "AppDelegate.h"
 
-// so user image cache
-#import "KRUserImageCacheUtil.h"
-
 @interface AppDelegate ()
 
 @end

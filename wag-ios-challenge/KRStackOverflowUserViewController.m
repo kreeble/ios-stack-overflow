@@ -18,8 +18,8 @@
 // api manager
 #import "KRStackOverflowApiManager.h"
 
-// user image cache
-#import "KRUserImageCacheUtil.h"
+// remote image cache
+#import "KRRemoteImageCache.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -68,7 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
 	KRStackOverflowUser *user = self.users[indexPath.row];
 
 	// profile image
-	UIImage *profileImage = [KRUserImageCacheUtil fastCachedImageForUrl:user.profileImage];
+	UIImage *profileImage = [KRRemoteImageCache fastCachedImageForUrl:user.profileImage];
 	if (profileImage != nil) {
 		NSLog(@"in memory cache hit!");
 		userCell.profileImageView.image = profileImage;
@@ -76,8 +76,8 @@ NS_ASSUME_NONNULL_BEGIN
 	} else {
 		[userCell showProfileImageLoadingView:YES];
 		__weak typeof(self) weakSelf = self;
-		[KRUserImageCacheUtil slowCachedImageForUrl:user.profileImage
-										 completion:^(UIImage *_Nullable image)
+		[KRRemoteImageCache slowCachedImageForUrl:user.profileImage
+									   completion:^(UIImage *_Nullable image)
 		 {
 			 typeof(self) strongSelf = weakSelf;
 			 KRStackOverflowUserTableViewCell *visibleUserCell = [strongSelf.tableView cellForRowAtIndexPath:indexPath];
@@ -187,8 +187,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 
-	NSLog(@"memory warning");
-	[KRUserImageCacheUtil clearInMemoryCache];
+	NSLog(@"Received memory warning.");
+	[KRRemoteImageCache clearInMemoryCache];
 }
 
 @end
