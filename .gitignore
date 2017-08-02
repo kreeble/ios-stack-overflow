@@ -20,9 +20,3 @@ build/*
 *~.nib
 \#*#
 .#*
-
-# CocoaPods
-Pods/Target\ Support\ Files/
-# -- libraries
-Pods/AFNetworking/
-Pods/Headers/Public/AFNetworking/
