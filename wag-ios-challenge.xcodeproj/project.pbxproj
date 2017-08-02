@@ -20,7 +20,6 @@
 		3D5055221F31514C006F63B1 /* KRStackOverFlowUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055211F31514C006F63B1 /* KRStackOverFlowUserTest.m */; };
 		3D50552B1F315AAC006F63B1 /* KRStackOverflowUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */; };
 		3D5055301F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */; };
-		3D50554F1F3179AD006F63B1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3D5055381F3179AD006F63B1 /* .gitignore */; };
 		3D5055501F3179AD006F63B1 /* ESConstraintUtilities-Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */; };
 		3D5055511F3179AD006F63B1 /* NSObject+ESDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50553D1F3179AD006F63B1 /* NSObject+ESDescription.m */; };
 		3D5055521F3179AD006F63B1 /* ESConstraintUtilities-Install.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5055401F3179AD006F63B1 /* ESConstraintUtilities-Install.m */; };
@@ -85,7 +84,6 @@
 		3D50552A1F315AAC006F63B1 /* KRStackOverflowUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserViewController.m; sourceTree = "<group>"; };
 		3D50552E1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRStackOverflowUserTableViewCell.h; sourceTree = "<group>"; };
 		3D50552F1F315F03006F63B1 /* KRStackOverflowUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRStackOverflowUserTableViewCell.m; sourceTree = "<group>"; };
-		3D5055381F3179AD006F63B1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3D50553A1F3179AD006F63B1 /* ESConstraintUtilities-Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESConstraintUtilities-Description.h"; sourceTree = "<group>"; };
 		3D50553B1F3179AD006F63B1 /* ESConstraintUtilities-Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESConstraintUtilities-Description.m"; sourceTree = "<group>"; };
 		3D50553C1F3179AD006F63B1 /* NSObject+ESDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ESDescription.h"; sourceTree = "<group>"; };
@@ -358,7 +356,6 @@
 		3D5055371F3179AD006F63B1 /* ESAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				3D5055381F3179AD006F63B1 /* .gitignore */,
 				3D5055391F3179AD006F63B1 /* Constraint Description */,
 				3D50553E1F3179AD006F63B1 /* Constraint Install */,
 				3D5055411F3179AD006F63B1 /* Constraint Layout */,
@@ -579,7 +576,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D50554F1F3179AD006F63B1 /* .gitignore in Resources */,
 				3D7A48411F31EA2B002298DB /* BronzeBadge@2x.png in Resources */,
 				3D5054E01F313D85006F63B1 /* LaunchScreen.storyboard in Resources */,
 				3D7A483E1F31E917002298DB /* GoldBadge@2x.png in Resources */,
