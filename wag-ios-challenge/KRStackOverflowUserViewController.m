@@ -11,6 +11,9 @@
 // view
 #import "KRStackOverflowUserTableViewCell.h"
 
+// auto-layout
+#import "ESAutoLayoutUtility.h"
+
 // domain model
 #import "KRStackOverflowUser.h"
 #import "KRStackOverflowUserBadgeCounts.h"
@@ -29,11 +32,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 // api manager
 @property (nonatomic, strong) KRStackOverflowApiManager *apiManager;
+
+// loading view
+@property (nonatomic, strong) UIActivityIndicatorView *loadingView;
 @end
 
 @implementation KRStackOverflowUserViewController
 #define KRUserTableCellId	@"KRStackOverflowUserTableViewCell"
 // ----
+
+#pragma mark - Loading View
+
+- (void)showLoadingView:(BOOL)show {
+	if (show) {
+		[self.loadingView startAnimating];
+	} else {
+		[self.loadingView stopAnimating];
+	}
+	self.loadingView.hidden = !show;
+}
 
 #pragma mark - API Manager
 
@@ -44,6 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 		 typeof(self) strongSelf = weakSelf;
 		 strongSelf.users = users;
 		 [strongSelf.tableView reloadData];
+		 [strongSelf showLoadingView:NO];
 	 }];
 }
 
@@ -110,32 +128,12 @@ NS_ASSUME_NONNULL_BEGIN
 	[super viewDidLoad];
 
 	[self setUpTableView];
+	[self setUpLoadingView];
 
+	// initial actions
+	[self showLoadingView:YES];
 	[self fetchUsers];
 	//[self DEBUGSetUpTestUsers];
-}
-
-- (void)DEBUGSetUpTestUsers {
-	KRStackOverflowUser *a = [KRStackOverflowUser new];
-	a.userId		= 1000;
-	a.reputation	= 963816;
-	a.displayName	= @"Jon Skeet";
-	a.profileImage	= [NSURL URLWithString:@"https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=128&d=identicon&r=PG"];
-	a.badgeCounts	= [KRStackOverflowUserBadgeCounts new];
-	a.badgeCounts.bronze = 7868;
-	a.badgeCounts.silver = 8689;
-	a.badgeCounts.gold = 1592;
-
-	KRStackOverflowUser *b = [KRStackOverflowUser new];
-	b.userId		= 1000;
-	b.reputation	= 746755;
-	b.displayName	= @"Rihanna Superlongmiddlename RiRi Lastname";
-	b.profileImage	= [NSURL URLWithString:@"https://www.gravatar.com/avatar/e3a181e9cdd4757a8b416d93878770c5?s=128&d=identicon&r=PG"];
-	b.badgeCounts	= [KRStackOverflowUserBadgeCounts new];
-	b.badgeCounts.bronze = 123;
-	b.badgeCounts.silver = 35989;
-	b.badgeCounts.gold = 12398;
-	self.users = @[a, b];
 }
 
 - (void)setUpTableView {
@@ -147,6 +145,15 @@ NS_ASSUME_NONNULL_BEGIN
 	// remove separators for no content
 	UIView *footerView = [[UIView alloc] initWithFrame:(CGRect) {0, 0, 0, 0}];
 	self.tableView.tableFooterView = footerView;
+}
+
+- (void)setUpLoadingView {
+	UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+	self.loadingView = loadingView;
+	self.tableView.backgroundView = self.loadingView;
+
+	self.loadingView.frame = (CGRect) { 0, 0, 36, 36 };
+	self.loadingView.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
 }
 
 #pragma mark - Start / End

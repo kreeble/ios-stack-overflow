@@ -15,13 +15,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation KRStackOverflowApiManager
 // common
-static NSString *const KRParamSiteKey = @"site";
+static NSString *const KRParamSiteKey			= @"site";
+static NSString *const KRParamPageSizeKey		= @"pagesize";
+
+static const NSUInteger KRParamPageSizeValue	= 50;
 
 // stack overflow
 static NSString *const KRParamSiteValueStackOverflow = @"stackoverflow";
 
 // users
-static NSString *const KRUsersJsonUsersKey = @"items";
+static NSString *const KRUsersJsonUsersKey		= @"items";
 // ----
 
 #pragma mark - Users
@@ -31,7 +34,8 @@ static NSString *const KRUsersJsonUsersKey = @"items";
 
 	// params
 	NSDictionary *params =
-	@{ KRParamSiteKey	: KRParamSiteValueStackOverflow };
+	@{ KRParamSiteKey		: KRParamSiteValueStackOverflow,
+	   KRParamPageSizeKey	: @(KRParamPageSizeValue) };
 
 	[self GET:kUrlString parameters:params progress:nil
 	  success:^(NSURLSessionDataTask *task, id _Nullable responseObject) {
@@ -84,7 +88,7 @@ static NSString *const KRUsersJsonUsersKey = @"items";
 
 		  }
 		  NSHTTPURLResponse *urlResponse = (NSHTTPURLResponse *)urlResponseObject;
-		  NSLog(@"Failure status code is %li", urlResponse.statusCode);
+		  NSLog(@"Failure status code is %li", (long)urlResponse.statusCode);
 		  completion(@[], error);
 	  }];
 }

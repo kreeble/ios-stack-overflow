@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const KRCacheDiskPath = @"KRRemoteImageCache";
 
+// units
 #define KRMegaByte	(1024 * 1024)
-
 // ----
 
 #pragma mark - Cache Operations
