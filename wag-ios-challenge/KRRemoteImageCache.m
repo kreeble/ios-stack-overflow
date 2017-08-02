@@ -84,7 +84,6 @@ static NSString *const KRCacheDiskPath = @"KRRemoteImageCache";
 	static NSCache *_cache = nil;
 	dispatch_once(&onceToken, ^{
 		_cache = [[NSCache alloc] init];
-		_cache.totalCostLimit = 20 * KRMegaByte;
 	});
 	return _cache;
 }
