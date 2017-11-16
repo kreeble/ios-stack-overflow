@@ -1,7 +1,7 @@
-Wag iOS Challenge
+iOS Stack Overflow
 Garam Song
+kreeble@gmail.com
 =================
-- Stack Overflow API page size has been set to 50
-- Auto-Layout macros have been used (inside folder 'ESAutoLayout') to assist
-  with laying out in code. Although they aren't necessary, they reduce code
-  and improve readability immensely.
+This project fetches the top users on Stack Overflow using their API and displays them in a table. Images are cached both in memory and on disk for performance and persistence.
+
+Separation of network and MVC layers is demonstrated here, in addition to coding organization, style and adherence to iOS best practices such as utilizing standard frameworks and patterns, and avoiding retain cycles.
