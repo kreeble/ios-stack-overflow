@@ -556,8 +556,7 @@
 				TargetAttributes = {
 					3D5054CC1F313D85006F63B1 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 49CYGH8GLU;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3D5054E51F313D85006F63B1 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -942,12 +941,14 @@
 			baseConfigurationReference = 1CE10A0AA1174BA734191A59 /* Pods-ios-stack-overflow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-stack-overflow/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.ios-stack-overflow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -956,12 +957,14 @@
 			baseConfigurationReference = C49D2587906256ED3023EEB1 /* Pods-ios-stack-overflow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49CYGH8GLU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-stack-overflow/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kreeble.ios-stack-overflow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
